@@ -37,6 +37,9 @@ h1{
 .search{
     text-align: center;
     padding: 1rem;
+    padding-top: 3.5rem;
+    /* width: 50%; */
+   
 }
 
 input{
@@ -45,6 +48,9 @@ input{
     border-radius: 25px;
     border: 1px solid rgba(225,225,225,0.8);
     background: rgba(225,225,225,0.2);
+    /* width: 40%; */
+    height: 50px;
+    /* text-align: center; */
 }
 
 ::placeholder{
@@ -53,11 +59,11 @@ input{
 
 .app .container{
     max-width: 700px;
-    height: 80%;
+    height: 70%;
     margin: auto;
     padding: 0 1rem;
     position: relative;
-    top: 9.5%;
+    top: 6%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
