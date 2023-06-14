@@ -39,10 +39,11 @@ function App() {
       const temp = q1 + 'indore' + q2
       const res = await axios.get(temp)
       setData(res.data)
-      console.log(res.data.main.temp)
+      console.log(res.data)
     }
     init()
   }, [])
+  
 
   return (
     <div className='app'>
@@ -62,10 +63,10 @@ function App() {
           <div className="location">
             <p>{data.name}</p>
           </div>
-          {console.log(data)}
+          {/* {console.log(data)} */}
 
           <div className="temp">
-            <h1>{data.main.temp}°F</h1>
+            <h1>{data.main.temp-273}°C</h1>
           </div>
 
           <div className="discription">
@@ -75,7 +76,7 @@ function App() {
 
           <div className="bottom">
             <div className="feels">
-              <p className='bold'>{data.main.temp}°F</p>
+              <p className='bold'>{data.main.temp-273}°C</p>
               <p>Feels like</p>
             </div>
 
