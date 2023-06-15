@@ -10,7 +10,7 @@ function App() {
 
   const q1=  'https://api.openweathermap.org/data/2.5/weather?q='
 
-  const q2= '&appid=4b8595b8ddd8f17138c4dbfdf58c740b'
+  const q2= '&appid=4b8595b8ddd8f17138c4dbfdf58c740b&units=metric'
 
   const searchLocation = (event) =>{
     if (event.key === 'Enter'){
@@ -66,7 +66,7 @@ function App() {
           {/* {console.log(data)} */}
 
           <div className="temp">
-            <h1>{data.main.temp-273}°C</h1>
+            <h1>{data.main.temp}°C</h1>
           </div>
 
           <div className="discription">
@@ -76,7 +76,7 @@ function App() {
 
           <div className="bottom">
             <div className="feels">
-              <p className='bold'>{data.main.temp-273}°C</p>
+              <p className='bold'>{data.main.temp}°C</p>
               <p>Feels like</p>
             </div>
 
